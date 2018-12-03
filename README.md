@@ -2,7 +2,7 @@
 
 rec0vering is a unc0ver removal tool for iOS 11-11.4b3
 
-- rec0vering's code will improve in the future. I an currently working with someone to improve on it..
+- rec0vering's code will improve in the future. I am currently working with someone to improve on it..
 
 - TWEAKS : tweak removal will be added soon. its in testing stages..
 
