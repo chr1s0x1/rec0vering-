@@ -1,5 +1,4 @@
-# rec0vering-
-Unc0ver Removal Tool for iOS 11-114.b3
+# Rec0vering - Unc0ver Removal Tool for iOS 11-11.4b3
 
 rec0vering is a unc0ver removal tool for iOS 11-11.4b3
 
