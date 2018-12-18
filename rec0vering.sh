@@ -1,15 +1,17 @@
-sjfdsv#!/bin/bash
+#!/bin/bash
 
-echo "Welcome to rec0vering v1.1, a unc0ver removal script for iOS 11-11.4b3, This build will removes tweaks, so keep that in mind. If you have any issues please contact me on Twitter (@Chr1sPwn3d) or on the r/Jailbreak Discord. rec0vering removal tool made by Chr1sPwn3d, not associated with unc0ver, including pwn20wnd, sbingner, or any other unc0ver developers. Ready? (Y/N)"
+echo "Welcome to rec0vering v1.0, a unc0ver removal script for iOS 11-11.4b3, If you have any issues please contact me on Twitter (@Chr1sPwn3d) or on the r/Jailbreak Discord. rec0vering removal tool made by Chr1sPwn3d, not associated with unc0ver, including pwn20wnd, sbingner, or any other unc0ver developers. Ready? (Y/N)"
 read runner
 
-if [[ $runner == Y || Yes || y || yes ]]
+if [[ $runner == Y || $runner == Yes || $runner == y || $runner == yes ]]
 then
-echo "Starting..Removing Tweaks"
-apt-get -y purge com.ex.substitute
-apt-get -y purge science.xnu.undecimus.resources
-apt-get -y purge science.xnu.injector
-apt-get -y purge com.sbingner.spawn
+
+# APT and dpkg gives an error when doing this so no tweak removal yet :/
+# echo "Starting..Removing Tweaks"
+# apt-get -y purge com.ex.substitute
+# apt-get -y purge science.xnu.undecimus.resources
+# apt-get -y purge science.xnu.injector
+# apt-get -y purge com.sbingner.spawn
 
 # searching for unc0ver & cydia files and removing them
 echo "Removing unc0ver . . .(1/10)"
