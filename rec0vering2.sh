@@ -10,7 +10,7 @@ curl -L -o unc0verstrap.tar.lzma https://github.com/pwn20wndstuff/Undecimus/raw/
 if [[ -e /var/mobile/unc0verstrap.tar.lzma ]]
 then
 mkdir /var/mobile/unc0verstrap
-mv /var/mobile/uc0verstrap.tar.lzma /var/mobile/unc0verstrap
+mv /var/mobile/unc0verstrap.tar.lzma /var/mobile/unc0verstrap
 
 echo "Waiting for Bootstrap to be moved..."
 sleep 5
