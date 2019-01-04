@@ -7,18 +7,24 @@ then
 echo "Starting.. Downloading Bootstrap (1/X)"
 curl -L -o unc0verstrap.tar.lzma https://github.com/pwn20wndstuff/Undecimus/raw/master/Undecimus/resources/strap.tar.lzma
 
-if [[ -e /var/mobile/Documents/unc0verstrap.tar.lzma ]]
+if [[ -e /var/mobile/unc0verstrap.tar.lzma ]]
 then
-mkdir /var/mobile/Documents/unc0verstrap
-mv /var/mobile/Documents/uc0verstrap.tar.lzma /var/mobile/Documents/unc0verstrap
+mkdir /var/mobile/unc0verstrap
+mv /var/mobile/uc0verstrap.tar.lzma /var/mobile/unc0verstrap
 
 echo "Waiting for Bootstrap to be moved..."
 sleep 5
-echo "Ectracting Bootstrap..."
-cd /var/mobile/Documents/unc0verstrap
-
+if [[ -e /var/mobile/unc0verstrap/unc0verstrap.tar.lzma ]]
+then
+echo "Extracting Bootstrap..."
+cd /var/mobile/unc0verstrap
 tar -xvf unc0verstrap.tar.lzma
 rm unc0verstrap.tar.lzma
+else
+echo "Error! : Bootstrap couldn't be moved."
+exit
+fi
+
 else
 echo "Error! : Couldn't download or find the bootstrap."
 exit
