@@ -32,4 +32,11 @@ exit
 fi
 echo "Scanning Filesystem for JB files (4/X)"
 
+elif [[ $starter == N || $starter == No || $starter == n || $starter == no ]]
+then
+echo "Quiting.."
+exit
+else
+echo "Invalid operation!"
+exit
 fi
