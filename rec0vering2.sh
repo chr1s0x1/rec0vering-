@@ -5,7 +5,8 @@ read starter
 if [[ $starter == Y || $starter == Yes || $starter == y || $starter == yes ]]
 then
 echo "(Rec0vering) Starting.. Downloading Bootstrap (1/X)"
-curl -L -o unc0verstrap.tar.lzma https://github.com/pwn20wndstuff/Undecimus/raw/master/Undecimus/resources/strap.tar.lzma # We download the boostrap, since it contains the jailbreak files that will be installed
+# We download the boostrap, since it contains the jailbreak files that will be installed
+curl -L -o unc0verstrap.tar.lzma https://github.com/pwn20wndstuff/Undecimus/blob/undecimus-2.1/Undecimus/resources/strap.tar.lzma
 
 if [[ -e /var/mobile/unc0verstrap.tar.lzma ]]
 then
